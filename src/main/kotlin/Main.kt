@@ -1,7 +1,13 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
-}
+//----------------------Kotlin program to add two numbers--------------------------------
+fun main() {
+            print("Enter the value for first number: ")
+            var first: Int = readLine()!!.toInt()
+            print("Enter the value for second number: ")
+            var second: Int = readLine()!!.toInt()
+
+            var result: Int = first + second;
+
+            print("The sum of $first and $second is: $result")
+        }
+
