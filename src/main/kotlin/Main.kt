@@ -1,13 +1,15 @@
 
-//----------------------Kotlin program to add two numbers--------------------------------
+//----------------------Kotlin program to calculate SI--------------------------------
 fun main() {
-            print("Enter the value for first number: ")
-            var first: Int = readLine()!!.toInt()
-            print("Enter the value for second number: ")
-            var second: Int = readLine()!!.toInt()
+            print("Enter the value for principal: ")
+    var p:Float = readLine()!!.toFloat();
+    print("Enter the value for time in hours: ")
+    var t:Float = readLine()!!.toFloat();
+    print("Enter the value for rate: ")
+    var r:Float = readLine()!!.toFloat();
 
-            var result: Int = first + second;
+    var SI:Float = (p*t*r)/100
+    print("The Simple Interest is: $SI")
 
-            print("The sum of $first and $second is: $result")
         }
 
