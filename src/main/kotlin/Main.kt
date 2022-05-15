@@ -1,15 +1,20 @@
+import java.awt.desktop.PrintFilesEvent
 
-//----------------------Kotlin program to calculate area of circle using function--------------------------------
+//--------------Kotlin program to check the number is even or odd--------------------------------
 
 fun main(){
-    print("The area of the circle is ${area()}")
+    check();
 }
 
-fun area():Double{
-    print("Enter the value for radius of the circle")
-    var r:Float = readLine()!!.toFloat();
+fun check(){
+    print("Enter a number: ")
+    var num:Int = readLine()!!.toInt();
 
-    var result:Double = 3.14*r*r;
-    return result;
+    if(num%2==0){
+        print("$num is an even number")
+    }
+    else{
+        print("$num is an odd number")
+    }
 
 }
