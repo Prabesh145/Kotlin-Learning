@@ -1,20 +1,21 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to check the number is even or odd--------------------------------
+//--------------Kotlin program to check the greater number--------------------------------
 
 fun main(){
     check();
 }
 
 fun check(){
-    print("Enter a number: ")
-    var num:Int = readLine()!!.toInt();
+    print("Enter the first number")
+    var first: Int = readLine()!!.toInt();
+    print("Enter the second number")
+    var second: Int = readLine()!!.toInt()
 
-    if(num%2==0){
-        print("$num is an even number")
+    if(first>second) {
+        print("$first is greater than $second")
     }
     else{
-        print("$num is an odd number")
+        print("$second is greater than $first")
     }
-
 }
