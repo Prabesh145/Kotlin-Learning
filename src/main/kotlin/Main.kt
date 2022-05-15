@@ -1,19 +1,18 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to display multiplication table of the input no--------------------------------
+//--------------Kotlin program to take 5 nos from users in array and print them--------------------------------
 
 fun main(){
-    multable();
-}
+    val myArray = arrayOfNulls<Int>(size = 5)
 
-fun multable(){
-    var table:Int=0;
-    print("Enter the number to get its multiplication table")
-    var num:Int = readLine()!!.toInt()
-    for (i in 1..10){
 
-        table = num * i
-        println("The multiplication table of $num is: $num x $i = $table")
+    for(i in myArray.indices){
+        println("Enter numbers at position $i")
+        myArray[i] = readLine()!!.toInt()
+
+    }
+    for(i in myArray.indices) {
+        println(myArray[i])
     }
 
 }
