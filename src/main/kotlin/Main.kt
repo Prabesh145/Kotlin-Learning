@@ -1,15 +1,19 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to find the sum of even nos from 1 to 20--------------------------------
+//--------------Kotlin program to display multiplication table of the input no--------------------------------
 
 fun main(){
-    print("The sum of even nos from 1 to 20 is: ${sum()}")
+    multable();
 }
 
-fun sum():Int{
-    var add:Int = 0;
-    for (i in 2..20 step 2){
-        add += i;
+fun multable(){
+    var table:Int=0;
+    print("Enter the number to get its multiplication table")
+    var num:Int = readLine()!!.toInt()
+    for (i in 1..10){
+
+        table = num * i
+        println("The multiplication table of $num is: $num x $i = $table")
     }
-    return add;
+
 }
