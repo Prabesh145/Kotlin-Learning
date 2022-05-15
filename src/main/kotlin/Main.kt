@@ -1,16 +1,29 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to take 3 nos from users in array and display sum--------------------------------
-fun main(){
-    val myArray = arrayOfNulls<Int>(size = 3)
-    var sum: Int = 0;
-    for(i in myArray.indices) {
+//--------------Kotlin program to take 8 nos from users and find the sum of even and odd nos--------------------------------
 
-        println("Enter the number for the $i position of the array")
+fun main(){
+    val myArray = arrayOfNulls<Int>(size = 8)
+    var evensum:Int = 0;
+    var oddsum:Int = 0;
+    for(i in myArray.indices){
+        println("Enter the value for the $i position of the array")
         myArray[i] = readLine()!!.toInt();
-        sum += myArray[i]!!.toInt();
+
+        if(myArray[i]!!.toInt()%2==0){
+          evensum += myArray[i]!!.toInt();
+        }
+        else
+        {
+            oddsum += myArray[i]!!.toInt()
+        }
 
     }
-    print(" The sum of the three numbers is : $sum")
+    println("The sum of even numbers are: $evensum")
+    println("The sum of odd numbers are: $oddsum")
+
+
+
+
 
 }
