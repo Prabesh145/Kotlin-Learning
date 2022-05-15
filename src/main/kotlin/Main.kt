@@ -1,19 +1,15 @@
 
-//----------------------Kotlin program to calculate area of triangle using function--------------------------------
+//----------------------Kotlin program to calculate area of circle using function--------------------------------
 
 fun main(){
-
-    //var res = area();
-    print("The area of the triangle is: ${area()}")
+    print("The area of the circle is ${area()}")
 }
-fun area(): Double{
-    print("Enter the value for base of the triangle: ")
-    var b:Float = readLine()!!.toFloat()
-    print("Enter the value for the height of the triangle")
-    var h:Float = readLine()!!.toFloat()
 
-    var result: Double = 0.5*(b*h);
+fun area():Double{
+    print("Enter the value for radius of the circle")
+    var r:Float = readLine()!!.toFloat();
+
+    var result:Double = 3.14*r*r;
     return result;
-
 
 }
