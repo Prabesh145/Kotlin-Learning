@@ -1,21 +1,17 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to check the greater number--------------------------------
+//--------------Kotlin program to print from 1 to 50 using for loop--------------------------------
 
 fun main(){
-    check();
-}
-
-fun check(){
-    print("Enter the first number")
-    var first: Int = readLine()!!.toInt();
-    print("Enter the second number")
-    var second: Int = readLine()!!.toInt()
-
-    if(first>second) {
-        print("$first is greater than $second")
-    }
-    else{
-        print("$second is greater than $first")
+    for(i in 1..50){
+        println(i)
     }
 }
+
+
+/*
+fun main(){
+    for (i in 1 until 51)
+        println(i)
+}
+*/
