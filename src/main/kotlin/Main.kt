@@ -1,15 +1,19 @@
 
-//----------------------Kotlin program to calculate SI--------------------------------
-fun main() {
-            print("Enter the value for principal: ")
-    var p:Float = readLine()!!.toFloat();
-    print("Enter the value for time in hours: ")
-    var t:Float = readLine()!!.toFloat();
-    print("Enter the value for rate: ")
-    var r:Float = readLine()!!.toFloat();
+//----------------------Kotlin program to calculate area of triangle using function--------------------------------
 
-    var SI:Float = (p*t*r)/100
-    print("The Simple Interest is: $SI")
+fun main(){
 
-        }
+    //var res = area();
+    print("The area of the triangle is: ${area()}")
+}
+fun area(): Double{
+    print("Enter the value for base of the triangle: ")
+    var b:Float = readLine()!!.toFloat()
+    print("Enter the value for the height of the triangle")
+    var h:Float = readLine()!!.toFloat()
 
+    var result: Double = 0.5*(b*h);
+    return result;
+
+
+}
