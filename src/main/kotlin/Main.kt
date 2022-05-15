@@ -1,9 +1,15 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to print from 50 to 1 using for loop--------------------------------
+//--------------Kotlin program to find the sum of even nos from 1 to 20--------------------------------
 
 fun main(){
-    for(i in 50 downTo 1){
-        println(i)
+    print("The sum of even nos from 1 to 20 is: ${sum()}")
+}
+
+fun sum():Int{
+    var add:Int = 0;
+    for (i in 2..20 step 2){
+        add += i;
     }
+    return add;
 }
