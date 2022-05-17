@@ -1,29 +1,24 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to take 8 nos from users and find the sum of even and odd nos--------------------------------
+//--------------Kotlin program to take input from user and find if its in the array--------------------------------
 
 fun main(){
-    val myArray = arrayOfNulls<Int>(size = 8)
-    var evensum:Int = 0;
-    var oddsum:Int = 0;
-    for(i in myArray.indices){
-        println("Enter the value for the $i position of the array")
-        myArray[i] = readLine()!!.toInt();
+    var myArray = arrayOf(1,3,4,5,6)
 
-        if(myArray[i]!!.toInt()%2==0){
-          evensum += myArray[i]!!.toInt();
+    print("Enter a number you want to check: ")
+    var num:Int = readLine()!!.toInt()
+    var ans="notfound";
+    for (i in myArray.indices)
+    {
+        if (num ==myArray[i]){
+            ans="found";
         }
-        else
-        {
-            oddsum += myArray[i]!!.toInt()
-        }
-
     }
-    println("The sum of even numbers are: $evensum")
-    println("The sum of odd numbers are: $oddsum")
-
-
-
+    if(ans=="found"){
+        print("The number is found")
+        return;
+    }
+    print("The number is not found")
 
 
 }
