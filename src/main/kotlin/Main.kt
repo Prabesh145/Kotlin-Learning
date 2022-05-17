@@ -1,24 +1,18 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Kotlin program to take input from user and find if its in the array--------------------------------
-
+//--------------list introduction--------------------------------
 fun main(){
-    var myArray = arrayOf(1,3,4,5,6)
+    //val myList = listOf<String>("one", "two", "three", "four")
 
-    print("Enter a number you want to check: ")
-    var num:Int = readLine()!!.toInt()
-    var ans="notfound";
-    for (i in myArray.indices)
-    {
-        if (num ==myArray[i]){
-            ans="found";
-        }
+    //print("The size of the string is ${myList.size}")
+    //print("The index number of three is: ${myList.indexOf("three")}")
+    //print("The third item in the list is: ${myList[2]}")
+
+   var list: MutableList<String> = mutableListOf<String>("Ram", "Shyam", "Hari", "Rita")
+    list.add("Prabesh")
+    for (i in list.indices) {
+        println("The entries of the list are: ${list[i]}")
     }
-    if(ans=="found"){
-        print("The number is found")
-        return;
-    }
-    print("The number is not found")
 
 
 }
