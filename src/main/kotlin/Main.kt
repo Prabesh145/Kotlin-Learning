@@ -1,13 +1,27 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------Maps Introduction--------------------------------
+//--------------Simple Interest through Constructor--------------------------------
 fun main(){
+print("Welcome to the SI calculation program")
 
-  val arithmetic = Arithmetic()
-  arithmetic.first = 5
-  arithmetic.second = 7
+  println("Enter the value for principal: ")
+  var p:Float = readLine()!!.toFloat();
 
-  print("The sum is: ${arithmetic.math()}")
+  println("Enter the value for time in hours: ")
+  var t:Float = readLine()!!.toFloat();
+
+  println("Enter the value for rate: ")
+  var r:Float = readLine()!!.toFloat()
+
+    var si = SimpleInterest(p,t,r)
+
+  print("The Simple Interest is: ${si.simpleinterest()}")
+
+
+
+
+
+
 
 
 }

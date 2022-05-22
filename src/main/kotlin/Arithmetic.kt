@@ -4,10 +4,24 @@ class Arithmetic {
     var second:Int=0;
 
 
-    fun math():Int{
+    fun add():Int{
         return (first+second);
     }
 
+    fun subtract():Int{
+
+        if(first>second){
+            return first-second
+
+        }else{
+
+            return second-first;
+
+        }
+
+
+
+    }
 
 
 }
