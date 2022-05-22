@@ -1,18 +1,21 @@
 import java.awt.desktop.PrintFilesEvent
 
-//--------------list introduction--------------------------------
+//--------------Maps Introduction--------------------------------
 fun main(){
-    //val myList = listOf<String>("one", "two", "three", "four")
 
-    //print("The size of the string is ${myList.size}")
-    //print("The index number of three is: ${myList.indexOf("three")}")
-    //print("The third item in the list is: ${myList[2]}")
+    var name = arrayOf("Ram", "Shyam", "Hari")
+    var marks = arrayOf(1,3,4)
 
-   var list: MutableList<String> = mutableListOf<String>("Ram", "Shyam", "Hari", "Rita")
-    list.add("Prabesh")
-    for (i in list.indices) {
-        println("The entries of the list are: ${list[i]}")
-    }
+    var student = mapOf<String,Int>(
+        "Ram" to 1, "Shyam" to 3, "Hari" to 4
+
+    )
+
+    print("Enter the name of the student to find the marks")
+    var boy = readLine()!!
+
+    //var result = student[boy]
+    print("The result of the student $boy is: ${student[boy]} ")
 
 
 }
