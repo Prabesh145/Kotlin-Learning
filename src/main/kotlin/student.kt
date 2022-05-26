@@ -1,8 +1,4 @@
-class student(public val firstname:String, public val lastname:String,
-              public val address:String){
-
-
-
+ data class student(public var name:String, public var address:String, public var gender:String){
 
 
 }
